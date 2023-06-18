@@ -1,0 +1,426 @@
+﻿@page
+@model FAP.Pages.TimetableModel
+@{
+}
+
+<div class="bg-gray-100">
+    <div class="container mx-auto">
+        <div class="py-4">
+            <h1 class="text-2xl font-bold mb-2">Activities for ngoclhhe163356 (Lý Hồng Ngọc)</h1>
+            <p class="text-gray-500 mb-4">Note: These activities do not include extra-curriculum activities, such as club activities ...</p>
+            <ul class="list-disc ml-8 mb-4">
+                <li>Các phòng bắt đầu bằng AL thuộc tòa nhà Alpha. VD: AL...</li>
+                <li>Các phòng bắt đầu bằng BE thuộc tòa nhà Beta. VD: BE,..</li>
+                <li>Các phòng bắt đầu bằng G thuộc tòa nhà Gamma. VD: G201,...</li>
+                <li>Các phòng tập bằng đầu bằng R thuộc khu vực sân tập Vovinam.</li>
+                <li>Các phòng bắt đầu bằng DE thuộc tòa nhà Delta. VD: DE,..</li>
+                <li>Little UK (LUK) thuộc tầng 5 tòa nhà Delta</li>
+            </ul>
+            <table>
+                 <thead>
+                                                <tr>
+                                                    <th rowspan="2">
+                                                        <span class="auto-style1">
+                                                            <strong>Year</strong>
+                                                        </span>
+                                                        <select name="ctl00$mainContent$drpYear" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$mainContent$drpYear\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_mainContent_drpYear">
+                                                            <option value="2020">2020</option>
+                                                            <option value="2021">2021</option>
+                                                            <option value="2022">2022</option>
+                                                            <option selected="selected" value="2023">2023</option>
+                                                            <option value="2024">2024</option>
+                                                        </select>
+                                                        <br/>
+                                                        Week
+
+                                                        <select name="ctl00$mainContent$drpSelectWeek" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$mainContent$drpSelectWeek\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_mainContent_drpSelectWeek">
+                                                            <option value="1">02/01 To 08/01</option>
+                                                            <option value="2">09/01 To 15/01</option>
+                                                            <option value="3">16/01 To 22/01</option>
+                                                            <option value="4">23/01 To 29/01</option>
+                                                            <option value="5">30/01 To 05/02</option>
+                                                            <option value="6">06/02 To 12/02</option>
+                                                            <option value="7">13/02 To 19/02</option>
+                                                            <option value="8">20/02 To 26/02</option>
+                                                            <option value="9">27/02 To 05/03</option>
+                                                            <option value="10">06/03 To 12/03</option>
+                                                            <option value="11">13/03 To 19/03</option>
+                                                            <option value="12">20/03 To 26/03</option>
+                                                            <option value="13">27/03 To 02/04</option>
+                                                            <option value="14">03/04 To 09/04</option>
+                                                            <option value="15">10/04 To 16/04</option>
+                                                            <option value="16">17/04 To 23/04</option>
+                                                            <option value="17">24/04 To 30/04</option>
+                                                            <option value="18">01/05 To 07/05</option>
+                                                            <option value="19">08/05 To 14/05</option>
+                                                            <option value="20">15/05 To 21/05</option>
+                                                            <option value="21">22/05 To 28/05</option>
+                                                            <option value="22">29/05 To 04/06</option>
+                                                            <option value="23">05/06 To 11/06</option>
+                                                            <option selected="selected" value="24">12/06 To 18/06</option>
+                                                            <option value="25">19/06 To 25/06</option>
+                                                            <option value="26">26/06 To 02/07</option>
+                                                            <option value="27">03/07 To 09/07</option>
+                                                            <option value="28">10/07 To 16/07</option>
+                                                            <option value="29">17/07 To 23/07</option>
+                                                            <option value="30">24/07 To 30/07</option>
+                                                            <option value="31">31/07 To 06/08</option>
+                                                            <option value="32">07/08 To 13/08</option>
+                                                            <option value="33">14/08 To 20/08</option>
+                                                            <option value="34">21/08 To 27/08</option>
+                                                            <option value="35">28/08 To 03/09</option>
+                                                            <option value="36">04/09 To 10/09</option>
+                                                            <option value="37">11/09 To 17/09</option>
+                                                            <option value="38">18/09 To 24/09</option>
+                                                            <option value="39">25/09 To 01/10</option>
+                                                            <option value="40">02/10 To 08/10</option>
+                                                            <option value="41">09/10 To 15/10</option>
+                                                            <option value="42">16/10 To 22/10</option>
+                                                            <option value="43">23/10 To 29/10</option>
+                                                            <option value="44">30/10 To 05/11</option>
+                                                            <option value="45">06/11 To 12/11</option>
+                                                            <option value="46">13/11 To 19/11</option>
+                                                            <option value="47">20/11 To 26/11</option>
+                                                            <option value="48">27/11 To 03/12</option>
+                                                            <option value="49">04/12 To 10/12</option>
+                                                            <option value="50">11/12 To 17/12</option>
+                                                            <option value="51">18/12 To 24/12</option>
+                                                            <option value="52">25/12 To 31/12</option>
+                                                        </select>
+                                                    </th>
+                                                    <div id="ctl00_mainContent_divNameDay">
+                                                        <th align='center'>Mon</th>
+                                                        <th align='center'>Tue</th>
+                                                        <th align='center'>Wed</th>
+                                                        <th align='center'>Thu</th>
+                                                        <th align='center'>Fri</th>
+                                                        <th align='center'>Sat</th>
+                                                        <th align='center'>Sun</th>
+                                                    </div>
+                                                </tr>
+                                                <tr>
+                                                    <div id="ctl00_mainContent_divShowDate">
+                                                        <th align='center'>12/06</th>
+                                                        <th align='center'>13/06</th>
+                                                        <th align='center'>14/06</th>
+                                                        <th align='center'>15/06</th>
+                                                        <th align='center'>16/06</th>
+                                                        <th align='center'>17/06</th>
+                                                        <th align='center'>18/06</th>
+                                                    </div>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <div id="ctl00_mainContent_divContent">
+                                                    <tr>
+                                                        <td>Slot 0 </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 1 </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 2 </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 3 </td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1283182'>
+                                                                    PRU211m-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=83bRrCwi%2f12JI1i8vLvPcA%3d%3d&SessionNo=Gew5MmzhJ0EqYzei2lIVuA%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at AL-R309 
+                                                                    <a>
+                                                                        <a class='label label-primary' target='_blank' href='https://fu-edunext.fpt.edu.vn'>-EduNext </a>
+                                                                        <br/>
+                                                                        (<font color=Green>attended</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(12:50-15:10)</span>
+                                                                        <br/>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1283382'>
+                                                                    SWD392-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=XfkfEl1rYW3%2bJ2hWcAslTw%3d%3d&SessionNo=Gew5MmzhJ0EqYzei2lIVuA%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at AL-R309 
+                                                                    <a>
+                                                                        <a class='label label-primary' target='_blank' href='https://fu-edunext.fpt.edu.vn'>-EduNext </a>
+                                                                        <br/>
+                                                                        (<font color=Green>attended</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(12:50-15:10)</span>
+                                                                        <br/>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1312240'>
+                                                                    EXE101-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=jmOwZiEmKIJEzdm9QtIGBw%3d%3d&SessionNo=eziGHqGNRVBuGRrX9QNVWg%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at AL-L203<br/>
+                                                                    <span class='label label-primary'>(12:50-15:10)</span>
+                                                                    <a>
+                                                                        <br/>
+                                                                        (<font color=Green>attended</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(12:50-15:10)</span>
+                                                                        <br/>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1283822'>
+                                                                    PRN221-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=ws6x%2bh%2fPwun1IUXYhSYtiA%3d%3d&SessionNo=6WZZ1cGE5PQGkPBZX0XUKA%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at AL-R309 
+                                                                    <a>
+                                                                        <a class='label label-primary' target='_blank' href='https://fu-edunext.fpt.edu.vn'>-EduNext </a>
+                                                                        <br/>
+                                                                        (<font color=Green>attended</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(12:50-15:10)</span>
+                                                                        <br/>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1283982'>
+                                                                    PRM392-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=K%2btqEEAO0OVd6pVpwO3prA%3d%3d&SessionNo=Gew5MmzhJ0EqYzei2lIVuA%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at AL-R309 - <a class='label label-default' href='https://meet.google.com/qig-ydis-hhq' target='_blank'>Meet URL</a>
+                                                                    <a>
+                                                                        <br/>
+                                                                        (<font color=red>Not yet</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(12:50-15:10)</span>
+                                                                        <br/>
+                                                            </p>
+                                                        </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 4 </td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1283823'>
+                                                                    PRN221-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=ws6x%2bh%2fPwun1IUXYhSYtiA%3d%3d&SessionNo=Gew5MmzhJ0EqYzei2lIVuA%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at AL-R309 
+                                                                    <a>
+                                                                        <a class='label label-primary' target='_blank' href='https://fu-edunext.fpt.edu.vn'>-EduNext </a>
+                                                                        <br/>
+                                                                        (<font color=Green>attended</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(15:20-17:40)</span>
+                                                                        <br/>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1283983'>
+                                                                    PRM392-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=K%2btqEEAO0OVd6pVpwO3prA%3d%3d&SessionNo=6WZZ1cGE5PQGkPBZX0XUKA%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at AL-R309 
+                                                                    <a>
+                                                                        <br/>
+                                                                        (<font color=Green>attended</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(15:20-17:40)</span>
+                                                                        <br/>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1283183'>
+                                                                    PRU211m-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=83bRrCwi%2f12JI1i8vLvPcA%3d%3d&SessionNo=6WZZ1cGE5PQGkPBZX0XUKA%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at AL-R309 
+                                                                    <a>
+                                                                        <a class='label label-primary' target='_blank' href='https://fu-edunext.fpt.edu.vn'>-EduNext </a>
+                                                                        <br/>
+                                                                        (<font color=Green>attended</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(15:20-17:40)</span>
+                                                                        <br/>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1283383'>
+                                                                    SWD392-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=XfkfEl1rYW3%2bJ2hWcAslTw%3d%3d&SessionNo=6WZZ1cGE5PQGkPBZX0XUKA%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at AL-R309 
+                                                                    <a>
+                                                                        <a class='label label-primary' target='_blank' href='https://fu-edunext.fpt.edu.vn'>-EduNext </a>
+                                                                        <br/>
+                                                                        (<font color=Green>attended</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(15:20-17:40)</span>
+                                                                        <br/>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1311985'>
+                                                                    EXE101-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=jmOwZiEmKIJEzdm9QtIGBw%3d%3d&SessionNo=Gew5MmzhJ0EqYzei2lIVuA%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at Phòng tự học<br/>
+                                                                    (_ChangeRoom)<br/>
+                                                                    <span class='label label-primary'>(15:20-17:40)</span>
+                                                                    <a>
+                                                                        <br/>
+                                                                        (<font color=red>Not yet</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(15:20-17:40)</span>
+                                                                        <br/>
+                                                                        <div class='online-indicator'>
+                                                                            <span class='blink'></span>
+                                                                        </div>
+                                                                        <h3 class='online-text'>Online</h3>
+                                                            </p>
+                                                        </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 5 </td>
+                                                        <td>-</td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1365692'>
+                                                                    EXE101g-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=qeWP54ZBZWzkcjnTHrqAGw%3d%3d&SessionNo=TOzW%2b2PecME5SIRGC1cQKQ%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at DE-230 
+                                                                    <a>
+                                                                        <br/>
+                                                                        (<font color=red>Not yet</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(18:00-20:20)</span>
+                                                                        <br/>
+                                                                        <div class='online-indicator'>
+                                                                            <span class='blink'></span>
+                                                                        </div>
+                                                                        <h3 class='online-text'>Online</h3>
+                                                            </p>
+                                                        </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 6 </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 7 </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 8 </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 9 </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>
+                                                            <p>
+                                                                <a href='../Schedule/ActivityDetail.aspx?id=1311984'>
+                                                                    EXE101-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=jmOwZiEmKIJEzdm9QtIGBw%3d%3d&SessionNo=6WZZ1cGE5PQGkPBZX0XUKA%3d%3d' target='_blank'>View Materials</a>
+                                                                    <br/>
+                                                                    at Phòng tự học 8<br/>
+                                                                    (Seminar Room GA511(8h30-11h30))<br/>
+                                                                    <span class='label label-primary'>(8:30-11:30)</span>
+                                                                    <a>
+                                                                        <br/>
+                                                                        (<font color=red>Not yet</font>
+                                                                        )<br/>
+                                                                        <span class='label label-success'>(8:30-11:30)</span>
+                                                                        <br/>
+                                                            </p>
+                                                        </td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 10 </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 11 </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slot 12 </td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </div>
+                                            </tbody>
+                                        </table>
+            <p class="text-sm text-gray-500 mt-4">Note: This timetable is subject to change and does not include any additional activities or events that may be scheduled.</p>
+        </div>
+    </div>
+</div>
