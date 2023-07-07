@@ -82,29 +82,28 @@
         </div>
       </div>
     </header>
-    <div class="container">
-        <main role="main" >
+    <main>
             @RenderBody()
         </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer class="border-top bg-gray-100 p-4 " >
+        <div class="container" >
             <span style="font-weight: bold">Mọi góp ý, thắc mắc xin liên hệ:</span>
             <span>Phòng dịch vụ sinh viên: Email:</span>
             <a href="dichvusinhvien@fe.edu.vn">dichvusinhvien@fe.edu.vn</a>
             <span>Điện thoại:</span>
             <span style="font-weight: bold">(024)7308.13.13</span>
-            <br/>
+            <br />
+            <br />
             &copy; 2023 - FAP - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    
+</body>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
-</body>
-
 </html>

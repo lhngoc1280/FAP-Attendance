@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\CSharp\FAP\FAP
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/CSharp/FAP/FAP/Pages/CheckAttendance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tBdHRlbmRhbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSharp/FAP/FAP/Pages/ClassIncharge.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xhc3NJbmNoYXJnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/CSharp/FAP/FAP/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
